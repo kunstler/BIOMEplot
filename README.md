@@ -1,7 +1,9 @@
-% BIOMEplot
-% Georges Kunstler
+BIOMEplot
+=======
 
-Adaptive Dynamics toolkit for RR package to plot Whittaker' biomes (Whittaker 1975).
+# Georges Kunstler
+
+R package to plot Whittaker' biomes (Whittaker 1975).
 
 The biomes MAP and MAT were digitalized from the modified biomes of Ricklefs (2008).
 
