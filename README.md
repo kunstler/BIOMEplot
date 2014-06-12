@@ -1,7 +1,7 @@
 BIOMEplot
 =======
 
-# Georges Kunstler
+## Georges Kunstler <georges.kunstler@gmail.com>
 
 R package to plot Whittaker' biomes (Whittaker 1975).
 
