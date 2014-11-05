@@ -1,7 +1,6 @@
 PACKAGE := $(shell grep '^Package:' DESCRIPTION | sed -E 's/^Package:[[:space:]]+//')
 
-all:
-	make -C src
+all: install
 
 document: roxygen
 
@@ -11,9 +10,6 @@ roxygen:
 
 install: roxygen
 	R CMD INSTALL .
-
-clean:
-	make -C src clean
 
 build:
 	R CMD build .
