@@ -18,7 +18,7 @@
 ##' @import sp
 fun.poly.obj <- function(){
   biomes.data <-  read.csv(system.file("extdata/biomes.csv",
-                                       package="traitcompetition"),
+                                       package="BIOMEplot"),
                            stringsAsFactors = FALSE)
   list.coord <- lapply(unique(biomes.data$biome),
                       function(biome.id,data)
