@@ -53,7 +53,7 @@ fun.poly.obj <- function(){
 ##' @export
 ##' @import sp
 plot_biome <- function(poly = fun.poly.obj()$poly.DF,
-                           col.biomes = make.transparent(c("navajowhite3",
+                       col.biomes = make.transparent(c("navajowhite3",
                                                            "darkgoldenrod1",
                                                            "sienna",
                                                            "darkolivegreen4",
@@ -63,10 +63,12 @@ plot_biome <- function(poly = fun.poly.obj()$poly.DF,
                                                            "olivedrab",
                                                            "gray"),
                                                          0.9),
-                           add.legend = TRUE){
-  par(mar = c(5.1, 3.5, 0.1, 0.1),
-      mgp
-      = c(1.8, 0.6,0))
+                       add.legend = TRUE,
+                       mar.vec = c(5.1, 3.5, 4.1, 2.1),
+                       cex.p = 1.2){
+  par(mar = mar.vec,
+      mgp = c(1.8, 0.6,0),
+      cex = cex.p)
   plot(0,0, type = 'n', xlim = c(0, 450), ylim = c(30, -15),
        xlab = "Mean annual precipitation (cm)",
        ylab = expression(paste('Mean annual temperature ', (~degree~C))))

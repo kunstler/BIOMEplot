@@ -6,7 +6,8 @@
 plot_biome(poly = fun.poly.obj()$poly.DF,
   col.biomes = make.transparent(c("navajowhite3", "darkgoldenrod1", "sienna",
   "darkolivegreen4", "darkseagreen3", "forestgreen", "darkgreen", "olivedrab",
-  "gray"), 0.9), add.legend = TRUE)
+  "gray"), 0.9), add.legend = TRUE, mar.vec = c(5.1, 3.5, 4.1, 2.1),
+  cex.p = 1.2)
 }
 \arguments{
 \item{poly}{biomes SpatialPolygons object}
