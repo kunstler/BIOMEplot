@@ -6,8 +6,8 @@
 plot_biome(poly = fun.poly.obj()$poly.DF,
   col.biomes = make.transparent(c("navajowhite3", "darkgoldenrod1", "sienna",
   "darkolivegreen4", "darkseagreen3", "forestgreen", "darkgreen", "olivedrab",
-  "gray"), 0.9), add.legend = TRUE, mar.vec = c(5.1, 3.5, 4.1, 2.1),
-  cex.p = 1.2)
+  "gray"), 0.9), add.legend = FALSE, add.number = TRUE,
+  merge.deserts = FALSE, mar.vec = c(5.1, 3.5, 3, 2.1), cex.p = 1.2)
 }
 \arguments{
 \item{poly}{biomes SpatialPolygons object}
@@ -15,6 +15,10 @@ plot_biome(poly = fun.poly.obj()$poly.DF,
 \item{col.biomes}{vector of colors for the biomes (TODO add name of biomes)}
 
 \item{add.legend}{TRUE or FALSE}
+
+\item{add.number}{TRUE or FALSE}
+
+\item{merge.deserts}{TRUE or FALSE}
 }
 \value{
 plot
